@@ -9,7 +9,7 @@ describe('#getInstalledVersion', () => {
 
     it('should return the installed version of a dependency in the node_modules folder', () => {
         process.env.RN_PROJECT_ROOT = path.join(process.cwd());
-        expect(getInstalledVersion('rsx-common')).to.deep.equals('0.1.3');
+        expect(getInstalledVersion('rsx-common')).to.deep.equals('0.1.4');
     });
 
 });
