@@ -18,7 +18,6 @@ describe('status', () => {
 
         var result;
         command({}, (list) => {
-            console.log(list);
             result = list;
         });
         expect(result).to.deep.equals({

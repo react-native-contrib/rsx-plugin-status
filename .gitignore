@@ -2,3 +2,5 @@
 *.log
 node_modules
 coverage
+
+!tests/fixtures/node_modules
