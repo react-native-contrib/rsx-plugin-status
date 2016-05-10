@@ -6,9 +6,12 @@ const log = utils.log;
 
 module.exports = function status(args, callback) {
     log.heading = 'rsx-status';
-    const appRoot = process.env.RN_PROJECT_ROOT;
+    const list = {};
 
     ['react', 'react-native'].forEach((dependency) => {
+        list[dependency] = getInstalledVersion(dependency);
         log.info(dependency + ': ' + getInstalledVersion(dependency));
     });
+
+    if (callback) { callback(list); }
 };
