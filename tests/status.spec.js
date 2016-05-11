@@ -21,11 +21,17 @@ describe('status', () => {
             result = list;
         });
         expect(result).to.deep.equals({
-            "react": "0.14.8",
-            "react-native": "0.25.1"
+            'react': '0.14.8',
+            'react-native': '0.25.1',
         });
     });
 
-    it('should throw an error if the directory is not a React Native project');
+    it('should throw an error if the directory is not a React Native project', () => {
+        process.env.RN_PROJECT_ROOT = process.cwd();
+
+        const spy = sinon.spy();
+        command({}, spy);
+        expect(spy.called).to.deep.equals(false);
+    });
 
 });

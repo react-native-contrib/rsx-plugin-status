@@ -4,7 +4,7 @@
   "description": "A project status plugin for the RSX CLI utility",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js src/ && istanbul cover _mocha --recursive tests/"
+    "test": "eslint index.js src/ tests/ && istanbul cover _mocha --recursive tests/"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/react-native-contrib/rsx-plugin-status#readme",
   "dependencies": {
-    "rsx-common": "^0.1.4"
+    "rsx-common": "^0.1.5"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.5",
