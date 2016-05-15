@@ -1,5 +1,6 @@
-const utils = require('rsx-common');
+'use strict';
 
+const utils = require('rsx-common');
 const getInstalledVersion = require('./getInstalledVersion');
 
 const log = utils.log;

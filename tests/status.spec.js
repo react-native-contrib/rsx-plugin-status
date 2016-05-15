@@ -1,7 +1,8 @@
+'use strict';
+
 const utils = require('rsx-common');
 const chai = require('chai');
 const sinon = require('sinon');
-const mock = require('mock-require');
 const path = require('path');
 
 const expect = chai.expect;
