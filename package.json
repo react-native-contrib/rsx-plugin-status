@@ -1,6 +1,6 @@
 {
   "name": "rsx-plugin-status",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A project status plugin for the RSX CLI utility",
   "main": "index.js",
   "scripts": {
