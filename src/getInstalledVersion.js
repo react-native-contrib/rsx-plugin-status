@@ -1,7 +1,7 @@
 'use strict';
 
-const utils = require('rsx-common');
-const path = require('path');
+let utils = require('rsx-common');
+let path = require('path');
 
 module.exports = function getInstalledVersion(dependency) {
     return utils.project.getPackageJson(

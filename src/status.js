@@ -1,13 +1,13 @@
 'use strict';
 
-const utils = require('rsx-common');
-const getInstalledVersion = require('./getInstalledVersion');
+let utils = require('rsx-common');
+let getInstalledVersion = require('./getInstalledVersion');
 
-const log = utils.log;
+let log = utils.log;
 
 module.exports = function status(args, callback) {
     log.heading = 'rsx-status';
-    const list = {};
+    let list = {};
 
     if (utils.validate.isProject() === false) {
         log.error(`${process.cwd()} is not a valid React Native project`);
