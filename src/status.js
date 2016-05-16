@@ -19,6 +19,5 @@ module.exports = function status(args, callback) {
         log.info(dependency + ': ' + getInstalledVersion(dependency));
     });
 
-
     if (callback) { callback(list); }
 };
